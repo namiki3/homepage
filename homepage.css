@@ -1,0 +1,51 @@
+
+
+body,background-color {
+    /* 横長で虹色を作る */
+    background: linear-gradient(to right, rgb(255, 0, 200), rgb(255, 238, 0), rgb(0, 221, 255), rgb(140, 0, 255), rgb(255, 0, 200)) 0% center/200%;
+    animation: background-color 2s linear infinite;
+    color: white;
+    mix-blend-mode: difference
+}
+
+@keyframes background-color {
+
+    /* backgroundを移動させる */
+    100% {
+        background-position-x: 200%;
+    }
+
+}
+label {
+  display: block;
+  font:
+    1rem "Fira Sans",
+    sans-serif;
+}
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+
+ul, ol {
+  background: #fcfcfc;/*背景色*/
+  padding: 0.5em 0.5em 0.5em 2em;/*ボックス内の余白*/
+  border: solid 3px gray;/*線の種類 太さ 色*/
+}
+
+ul li, ol li {
+  line-height: 1.5; /*文の行高*/
+  padding: 0.5em 0; /*前後の文との余白*/
+}
+
+h2 {
+  padding: 1rem 3rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  width: fit-content; /* テキストの長さに合わせる */
+  padding: 0.5em 1em;;
+}
+
